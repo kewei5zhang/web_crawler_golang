@@ -9,8 +9,6 @@ import (
 	"github.com/gocolly/colly"
 )
 
-const ozBargainDealsLink = "https://www.ozbargain.com.au/deals"
-
 type Scraper interface {
 	DailyDealScraper(dealsLink string) ([]Deal, error)
 	DealScraper(dealsLink string) ([]Deal, error)
